@@ -34,7 +34,7 @@ HtmlSelectElement.prototype.focus = () => console.log('Select Focued.');
 const e = new HtmlElement();
 const s = new HtmlSelectElement([1,2,3]);
 
-function HtmlImageElement(src) {
+function HtmlImageElement(src = "http://linkedin.com/in/joaoramires") {
   this.src = src;
   this.render = () => `<img src="${this.src}" />`
 }
